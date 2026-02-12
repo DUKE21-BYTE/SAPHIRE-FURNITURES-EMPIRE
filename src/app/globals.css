@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors from user request */
+  --primary: #b45309; /* Warm golden oak/amber */
+  --primary-hover: #92400e;
+  --secondary: #78350f;
+  --accent: #f59e0b;
+  --background-light: #fdfbf7;
+  --background-dark: #1c1917;
+  --neutral-surface: #fffbeb;
+  --neutral-dark: #292524;
+  --wood-accent: #D2B48C;
+
+  /* Font */
+  --font-display: "Manrope", sans-serif;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background-light: var(--background-light);
+  --color-background-dark: var(--background-dark);
+  --color-neutral-surface: var(--neutral-surface);
+  --color-neutral-dark: var(--neutral-dark);
+  --color-wood-accent: var(--wood-accent);
+
+  --font-display: var(--font-display);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1c1917;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-color: var(--background-light);
+  color: #1c1917;
+  font-family: var(--font-display);
+}
+
+.dark body {
+  background-color: var(--background-dark);
+  color: #ededed;
+}
+
+/* Material Icons Helper */
+.material-icons, .material-icons-round, .material-symbols-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
