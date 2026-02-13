@@ -111,6 +111,7 @@ export default function Navbar() {
                    <Link href="/category/storage" onClick={toggleMobileMenu} className="block px-3 py-2 rounded-md text-sm text-stone-600 dark:text-stone-300 hover:text-[#B48E43] hover:bg-stone-50">Storage</Link>
                 </div>
                 <Link href="/about" onClick={toggleMobileMenu} className="block px-3 py-2.5 rounded-lg text-sm font-bold text-stone-900 dark:text-white hover:bg-stone-50 dark:hover:bg-stone-800">About Us</Link>
+                <Link href="/support" onClick={toggleMobileMenu} className="block px-3 py-2.5 rounded-lg text-sm font-bold text-stone-900 dark:text-white hover:bg-stone-50 dark:hover:bg-stone-800">Support</Link>
                 <Link href="/custom" onClick={toggleMobileMenu} className="block w-full text-center mt-4 px-6 py-3 border border-transparent text-sm font-bold rounded-lg text-white bg-[#B48E43] hover:bg-[#96752E] shadow-md">
                   Start Designing
                 </Link>
